@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap");
+html {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+.intro {
+  position: relative;
+  background-color: #333; }
+  .intro-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem; }
+  .intro-heading {
+    font-size: 2.8125rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px black; }
+  .intro-foods {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .intro-foods i {
+      color: #a79a2d;
+      font-size: 7rem;
+      transition: .5s;
+      position: absolute;
+      transform: scale(0); }
+      .intro-foods i.change {
+        transform: scale(1);
+        transition: .5s .5s; }
+
+.popular {
+  position: relative;
+  background-color: #222; }
+  .popular-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem; }
+  .popular-heading {
+    font-size: 2.8125rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px black; }
+  .popular-foods {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    transform-style: preserve-3d;
+    perspective: 1500px; }
+    .popular-foods .foods-item {
+      background-color: #a79a2d;
+      width: 12rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      box-shadow: .6rem .6rem .6rem #000;
+      transform: rotateY(15deg) rotateX(-10deg); }
+      .popular-foods .foods-item::before {
+        content: "";
+        position: absolute; }
+      .popular-foods .foods-item .item-img {
+        width: 100%; }
+      .popular-foods .foods-item .item-name {
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: .2rem;
+        font-size: 1.2rem;
+        color: #111;
+        text-shadow: 0.08rem 0.08rem 0.08rem #000;
+        margin: 1rem 0; }
+      .popular-foods .foods-item .item-btn {
+        outline: none;
+        border: none;
+        background-color: #111;
+        color: #888;
+        padding: .3rem .8rem;
+        border-radius: 4rem;
+        font-weight: 900;
+        font-size: .65rem;
+        letter-spacing: .05rem;
+        box-shadow: -0.1rem -0.1rem 0.1rem #000; }
