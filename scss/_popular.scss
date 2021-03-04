@@ -1,6 +1,7 @@
 .popular {
     position: relative;
     background-color: #222;
+    user-select: all;
 
     &-wrapper {
         width: 100%;
@@ -55,8 +56,7 @@
                 height: 100%;
                 background-color: #817824;
                 left: 0;
-                top: 0;
-
+                top: 0; 
                 transform-origin: left;
                 transform: rotateY(90deg);
             }
