@@ -1,0 +1,15 @@
+.footer{
+    position: relative;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-top:0.1rem solid #888; ;
+
+    &-desc{
+        color: #eee;
+        font-size: .6rem;
+        letter-spacing: .04rem;
+    }
+}
