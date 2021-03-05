@@ -286,18 +286,34 @@ html {
     letter-spacing: .04rem; }
 
 .nav {
-  position: absolute;
+  position: fixed;
   background-color: #000;
+  display: flex;
+  justify-content: center;
   z-index: 3;
   width: 100%;
   top: 0;
   transform: translateY(-100%);
-  transition: transform .5s .3s; }
+  transition: transform .5s; }
   .nav.is-active {
-    transform: translateY(0); }
+    transform: translateY(0);
+    transition: transform .5s .3s; }
+    .nav.is-active .nav-link {
+      opacity: 1; }
+    .nav.is-active .nav-link:nth-child(1) {
+      transition: opacity .5s .6s; }
+    .nav.is-active .nav-link:nth-child(2) {
+      transition: opacity .5s .7s; }
+    .nav.is-active .nav-link:nth-child(3) {
+      transition: opacity .5s .8s; }
+    .nav.is-active .nav-link:nth-child(4) {
+      transition: opacity .5s .9s; }
+    .nav.is-active .nav-link:nth-child(5) {
+      transition: opacity .5s 1s; }
   .nav-wrapper {
     background-color: #000;
     width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -308,7 +324,9 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s; }
     .nav-link:hover i {
       color: #fff; }
     .nav-link:hover span {
@@ -337,9 +355,10 @@ html {
   left: .7rem;
   z-index: 3;
   cursor: pointer;
-  transition: top .5s; }
+  transition: top .5s .3s; }
   .menu-btn.is-active {
-    top: 6rem; }
+    top: 6rem;
+    transition: top .5s; }
   .menu-btn::before {
     content: "";
     position: absolute;
