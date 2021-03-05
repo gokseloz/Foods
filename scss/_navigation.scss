@@ -1,0 +1,24 @@
+.menu-btn{
+    outline: none;
+    border: none;
+    width: 1.8rem;
+    height: 2.7rem;
+    border-radius: 20rem 20rem 10rem 10rem;
+    position: fixed;
+    background: #000;
+    top: .5rem;
+    left: .7rem;
+    z-index: 3;
+    cursor: pointer;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: .2rem;
+        height: 100%;
+        background-color: #000;
+        top: -100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
