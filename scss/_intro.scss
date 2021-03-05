@@ -31,9 +31,10 @@
         i {
             color: #a79a2d;
             font-size: 7rem;
-            transition: .5s;
             position: absolute;
             transform: scale(0);
+            transition: .5s;
+
 
             &.change {
                 transform: scale(1);
