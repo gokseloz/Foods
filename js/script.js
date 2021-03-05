@@ -1,5 +1,6 @@
 let food = [...document.querySelectorAll(".food")]
-
+let menuBtn = document.querySelector(".menu-btn")
+let nav = document.querySelector(".nav")
 
 i = 0;
 
@@ -16,3 +17,8 @@ setInterval(() => {
         icon.nextElementSibling.classList.add("change")
     }
 }, 3000);
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-active")
+    nav.classList.toggle("is-active")
+} )
