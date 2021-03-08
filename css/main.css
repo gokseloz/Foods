@@ -30,6 +30,12 @@ html {
     font-weight: 900;
     letter-spacing: 4px;
     text-shadow: 2px 2px black; }
+    @media (min-width: 550px) {
+      .intro-heading {
+        font-size: 3.5rem; } }
+    @media (min-width: 700px) {
+      .intro-heading {
+        font-size: 4.2rem; } }
   .intro-foods {
     position: relative;
     display: flex;
@@ -41,6 +47,12 @@ html {
       position: absolute;
       transform: scale(0);
       transition: .5s; }
+      @media (min-width: 550px) {
+        .intro-foods i {
+          font-size: 8.5rem; } }
+      @media (min-width: 700px) {
+        .intro-foods i {
+          font-size: 10.2rem; } }
       .intro-foods i.change {
         transform: scale(1);
         transition: .5s .5s; }
@@ -54,7 +66,7 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 4rem 2rem; }
+    padding: 4rem 4rem; }
   .popular-heading {
     font-size: 2.8125rem;
     color: #fff;
@@ -62,6 +74,12 @@ html {
     font-weight: 900;
     letter-spacing: 4px;
     text-shadow: 2px 2px black; }
+    @media (min-width: 550px) {
+      .popular-heading {
+        font-size: 3.5rem; } }
+    @media (min-width: 700px) {
+      .popular-heading {
+        font-size: 4.2rem; } }
   .popular-foods {
     width: 100%;
     display: flex;
@@ -82,6 +100,9 @@ html {
       transform: rotateY(15deg) rotateX(-15deg);
       transform-style: preserve-3d;
       transition: transform .5s, box-shadow .5s; }
+      @media (min-width: 550px) {
+        .popular-foods .foods-item {
+          width: 15rem; } }
       .popular-foods .foods-item:hover {
         transform: rotateY(15deg) rotateX(-15deg) translateY(-1.5rem);
         box-shadow: 1rem 1rem 1rem #000; }
@@ -115,6 +136,9 @@ html {
         color: #111;
         text-shadow: 0.08rem 0.08rem 0.08rem #000;
         margin: 1rem 0; }
+        @media (min-width: 550px) {
+          .popular-foods .foods-item .item-name {
+            font-size: 1.5rem; } }
       .popular-foods .foods-item .item-btn {
         outline: none;
         border: none;
@@ -127,6 +151,9 @@ html {
         letter-spacing: .08rem;
         box-shadow: -0.1rem -0.1rem 0.1rem #000;
         cursor: pointer; }
+        @media (min-width: 550px) {
+          .popular-foods .foods-item .item-btn {
+            font-size: 0.82rem; } }
 
 .gallery {
   position: relative;
@@ -137,7 +164,7 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1.5rem; }
+    padding: 2rem; }
   .gallery-heading {
     font-size: 2.8125rem;
     color: #fff;
@@ -145,6 +172,12 @@ html {
     font-weight: 900;
     letter-spacing: 4px;
     text-shadow: 2px 2px black; }
+    @media (min-width: 550px) {
+      .gallery-heading {
+        font-size: 3.5rem; } }
+    @media (min-width: 700px) {
+      .gallery-heading {
+        font-size: 4.2rem; } }
   .gallery-images {
     width: 100%;
     display: flex;
@@ -156,18 +189,32 @@ html {
       position: relative;
       width: 16rem;
       height: 10rem;
-      margin: 2rem 0; }
+      margin: 2rem; }
+      @media (min-width: 550px) {
+        .gallery-images .images-item {
+          width: 20rem;
+          height: 12.5rem;
+          margin: 3rem; } }
+      @media (min-width: 700px) {
+        .gallery-images .images-item {
+          margin: 2rem; } }
       .gallery-images .images-item:hover .item-img {
         transform: scale(1.1);
         box-shadow: .4rem .4rem 0.05rem #e92929, .8rem .8rem 0.05rem #a2e946, 1.2rem 1.2rem 0.05rem #297ce9, 1.6rem 1.6rem 0.05rem #e92999;
         filter: blur(5px);
         opacity: .5; }
       .gallery-images .images-item:hover .item-title {
-        width: 30%;
+        width: 50%;
         transition: width .5s .5s; }
+        @media (min-width: 550px) {
+          .gallery-images .images-item:hover .item-title {
+            font-size: 1rem; } }
       .gallery-images .images-item:hover .item-desc {
         opacity: 1;
         transition: opacity 1s 1s; }
+        @media (min-width: 550px) {
+          .gallery-images .images-item:hover .item-desc {
+            font-size: .8rem; } }
       .gallery-images .images-item:hover::before {
         width: 90%; }
       .gallery-images .images-item:hover::after {
@@ -221,14 +268,26 @@ html {
 
 .register {
   position: relative;
-  background-color: #222; }
+  background-color: #222;
+  display: flex;
+  justify-content: center; }
   .register-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem 4rem; }
+    padding: 2rem 0; }
+    @media (min-width: 550px) {
+      .register-wrapper {
+        width: 20rem;
+        align-items: flex-start; } }
+    @media (min-width: 896px) {
+      .register-wrapper {
+        width: 45rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; } }
   .register-heading {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -237,16 +296,29 @@ html {
     font-weight: 900;
     text-align: left;
     width: 16rem; }
+    @media (min-width: 550px) {
+      .register-heading {
+        font-size: 1.8rem; } }
   .register-desc {
     font-size: .6rem;
     color: #888;
     text-transform: uppercase;
     text-align: left;
     width: 16rem; }
+    @media (min-width: 550px) {
+      .register-desc {
+        font-size: .7rem;
+        width: 18rem; } }
   .register-form {
     margin-top: 2rem;
     position: relative;
     width: 16rem; }
+    @media (min-width: 550px) {
+      .register-form {
+        width: 18rem; } }
+    @media (min-width: 896px) {
+      .register-form {
+        margin-top: 0; } }
     .register-form label {
       position: absolute;
       width: 0;
@@ -260,6 +332,9 @@ html {
     color: #333;
     letter-spacing: .05rem;
     font-weight: bold; }
+    @media (min-width: 550px) {
+      .register-input {
+        font-size: .8rem; } }
   .register-btn {
     position: absolute;
     top: 50%;
@@ -281,9 +356,15 @@ html {
   padding: 2rem;
   border-top: 0.1rem solid #888; }
   .footer-desc {
-    color: #eee;
+    color: #888;
     font-size: .6rem;
     letter-spacing: .04rem; }
+    @media (min-width: 550px) {
+      .footer-desc {
+        font-size: .7rem; } }
+    @media (min-width: 700px) {
+      .footer-desc {
+        font-size: .8rem; } }
 
 .nav {
   position: fixed;
@@ -318,6 +399,20 @@ html {
     align-items: center;
     justify-content: center;
     padding: 1.3rem 0; }
+    @media (min-width: 550px) {
+      .nav-wrapper {
+        padding: 1.7rem 0; } }
+    @media (min-width: 900px) {
+      .nav-wrapper {
+        padding: 1.2rem 0; } }
+  .nav-link:not(:nth-last-child(1)) {
+    margin-right: .5rem; }
+    @media (min-width: 550px) {
+      .nav-link:not(:nth-last-child(1)) {
+        margin-right: 2rem; } }
+    @media (min-width: 900px) {
+      .nav-link:not(:nth-last-child(1)) {
+        margin-right: 5rem; } }
   .nav-link {
     text-decoration: none;
     color: #aaa;
@@ -327,6 +422,9 @@ html {
     justify-content: center;
     opacity: 0;
     transition: opacity .5s; }
+    @media (min-width: 550px) {
+      .nav-link {
+        font-size: 1.12rem; } }
     .nav-link:hover i {
       color: #fff; }
     .nav-link:hover span {
@@ -334,14 +432,21 @@ html {
     .nav-link i {
       font-size: 1.6rem;
       transition: color .3s; }
+      @media (min-width: 550px) {
+        .nav-link i {
+          font-size: 2rem; } }
+      @media (min-width: 900px) {
+        .nav-link i {
+          font-size: 4rem; } }
     .nav-link span {
       font-size: .9rem;
       font-weight: 900;
       letter-spacing: .13rem;
       margin-top: .1rem;
       transition: color .3s; }
-  .nav-link:not(:nth-last-child(1)) {
-    margin-right: .5rem; }
+      @media (min-width: 550px) {
+        .nav-link span {
+          font-size: 1.12rem; } }
 
 .menu-btn {
   outline: none;
@@ -352,13 +457,26 @@ html {
   position: fixed;
   background: #000;
   top: .5rem;
-  left: .7rem;
+  left: 1rem;
   z-index: 3;
   cursor: pointer;
   transition: top .5s .3s; }
+  @media (min-width: 550px) {
+    .menu-btn {
+      width: 2.1rem;
+      height: 3.2rem; } }
+  @media (min-width: 700px) {
+    .menu-btn {
+      left: 2.5rem; } }
   .menu-btn.is-active {
     top: 6rem;
     transition: top .5s; }
+    @media (min-width: 550px) {
+      .menu-btn.is-active {
+        top: 7.5rem; } }
+    @media (min-width: 900px) {
+      .menu-btn.is-active {
+        top: 8.5rem; } }
   .menu-btn::before {
     content: "";
     position: absolute;

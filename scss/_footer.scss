@@ -8,8 +8,16 @@
     border-top:0.1rem solid #888; ;
 
     &-desc{
-        color: #eee;
+        color: #888;
         font-size: .6rem;
         letter-spacing: .04rem;
+
+        @media (min-width:550px){
+            font-size: .7rem;
+        }
+        @media (min-width:700px){
+            font-size: .8rem;
+        }
+
     }
 }
