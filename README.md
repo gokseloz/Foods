@@ -1,7 +1,7 @@
 ## FOODS
 <ul>
 <li>A project from an Online Course</li>
-<li>Vast majority of the codes I implemented by myself. </li>
+<li>Vast majority of the codes I implemented by myself.</li>
 <li>When I got stuck and could not find out any way to solve the problem, I took a look at the completed project's code or search online<li>
 </ul>
 
