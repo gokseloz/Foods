@@ -1,6 +1,6 @@
 .register {
     position: relative;
-    background-color: #222;
+    background-color: $c-bg-secondary;
     display: flex;
     justify-content: center;
 
@@ -23,12 +23,15 @@
             justify-content: space-between;
             align-items: flex-start;
         }
+        @media (min-width:1400px) {
+            width: 55rem;
+        }
     }
 
     &-heading {
         font-size: 1.6rem;
         text-transform: uppercase;
-        color: #a79a2d;
+        color: $c-mustard;
         text-align: center;
         font-weight: 900;
         text-align: left;
@@ -38,11 +41,15 @@
             font-size: 1.8rem;
         }
 
+        @media (min-width:1400px) {
+            font-size: 2.3rem;
+        }
+
     }
 
     &-desc {
         font-size: .6rem;
-        color: #888;
+        color: $c-dark-gray;
         text-transform: uppercase;
         text-align: left;
         width: 16rem;
@@ -50,6 +57,10 @@
         @media (min-width:550px){
             font-size: .7rem;
             width: 18rem;
+        }
+        @media (min-width:1400px) {
+            font-size: .9rem;
+            width: 22rem;
         }
 
     }
@@ -65,6 +76,9 @@
 
         @media (min-width:896px){
             margin-top: 0;
+        }
+        @media (min-width:1400px){
+            width: 21rem;
 
         }
 
@@ -81,15 +95,24 @@
         font-size: .6rem;
         width: 100%;
         padding: .6rem 2.2rem .6rem .4rem;
-        color: #333;
+        color: $c-mustard;
         letter-spacing: .05rem;
         font-weight: bold;
-
+        border: .1rem solid $c-mustard;
         
         @media (min-width:550px){
             font-size: .8rem;
         }
+        @media (min-width:1400px) {
+            font-size: 1rem;
+        }
+
+        &::placeholder{
+            color: $c-mustard;
+        }
     }
+
+    
 
     &-btn {
         position: absolute;
@@ -98,8 +121,8 @@
         right: 1.1%;
         height: 80%;
         width: 10%;
-        color: #a79a2d;
-        background-color: #333;
+        color: $c-mustard;
+        background-color: $c-bg-primary;
         outline: none;
         border: none;
     }

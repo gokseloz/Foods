@@ -1,6 +1,6 @@
 .intro {
     position: relative;
-    background-color: #333;
+    background-color: $c-bg-primary;
 
     &-wrapper {
         width: 100%;
@@ -13,23 +13,6 @@
         padding-right: 4rem;
     }
 
-    &-heading {
-        font-size: 2.8125rem;
-        color: #fff;
-        text-align: center;
-        font-weight: 900;
-        letter-spacing: 4px;
-        text-shadow: 2px 2px rgba(#000, 1);
-
-        @media (min-width:550px) {
-            font-size: 3.5rem;
-        }
-
-        @media (min-width:700px) {
-            font-size: 4.2rem;
-        }
-    }
-
     &-foods {
         position: relative;
         display: flex;
@@ -37,7 +20,7 @@
         align-items: center;
 
         i {
-            color: #a79a2d;
+            color: $c-mustard;
             font-size: 7rem;
             position: absolute;
             transform: scale(0);
@@ -49,6 +32,12 @@
 
             @media (min-width:700px) {
                 font-size: 10.2rem;
+            }
+            @media (min-width:1000px) {
+                font-size: 13.6rem;
+            }
+            @media (min-width:1000px) {
+                font-size: 18.1rem;
             }
 
 

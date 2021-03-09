@@ -1,6 +1,6 @@
 .nav {
     position: fixed;
-    background-color: #000;
+    background-color: $c-black;
     display: flex;
     justify-content: center;
     z-index: 3;
@@ -39,7 +39,7 @@
     }
 
     &-wrapper {
-        background-color: #000;
+        background-color: $c-black;
         width: 100%;
         overflow: hidden;
         display: flex;
@@ -66,11 +66,14 @@
         @media (min-width:900px) {
             margin-right: 5rem;
         }
+        @media (min-width:1400px) {
+            margin-right: 6rem;
+        }
     }
 
     &-link {
         text-decoration: none;
-        color: #aaa;
+        color: $c-gray;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -84,11 +87,11 @@
 
         &:hover {
             i {
-                color: #fff;
+                color: $c-white;
             }
 
             span {
-                color: #fff;
+                color: $c-white;
             }
         }
 
@@ -103,6 +106,9 @@
             @media (min-width:900px) {
                 font-size: 4rem;
             }
+            @media (min-width:1400px) {
+                font-size: 4.5rem;
+            }
 
         }
 
@@ -116,58 +122,10 @@
             @media (min-width:550px) {
                 font-size: 1.12rem;
             }
+            @media (min-width:1400px) {
+                font-size: 1.8rem;
+            }
         }
     }
-
-
 }
 
-.menu-btn {
-    outline: none;
-    border: none;
-    width: 1.8rem;
-    height: 2.7rem;
-    border-radius: 20rem 20rem 10rem 10rem;
-    position: fixed;
-    background: #000;
-    top: .5rem;
-    left: 1rem;
-    z-index: 3;
-    cursor: pointer;
-    transition: top .5s .3s;
-
-    @media (min-width:550px) {
-        width: 2.1rem;
-        height: 3.2rem;
-    }
-
-    @media (min-width:700px) {
-        left: 2.5rem;
-    }
-
-    &.is-active {
-        top: 6rem;
-        transition: top .5s;
-
-        @media (min-width:550px) {
-            top: 7.5rem;
-        }
-
-        @media (min-width:900px) {
-            top: 8.5rem;
-        }
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: .2rem;
-        height: 300%;
-        background-color: #000;
-        top: -300%;
-        left: 50%;
-        transform: translateX(-50%);
-
-
-    }
-}

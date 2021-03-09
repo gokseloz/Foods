@@ -1,0 +1,29 @@
+.gallery {
+    position: relative;
+    background-color: $c-bg-primary;
+    display: flex;
+    justify-content: center;
+
+    &-wrapper {
+        width: 100%;
+        max-width: 1700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    &-images {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+
+        @media (min-width:1400px) {  
+            justify-content: space-evenly;
+        }
+    }
+}

@@ -1,14 +1,14 @@
 .footer{
     position: relative;
-    background-color: #222;
+    background-color: $c-bg-secondary;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    border-top:0.1rem solid #888; ;
+    border-top:0.1rem solid $c-dark-gray; ;
 
     &-desc{
-        color: #888;
+        color: $c-dark-gray;
         font-size: .6rem;
         letter-spacing: .04rem;
 
