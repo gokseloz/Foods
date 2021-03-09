@@ -12,7 +12,7 @@
 
 ## What did I learn from this project?
 <ul>
-<li>Creating 3D view</li>
+<li>A card with a different 3D effect</li>
 <li>Texts fade-in effect from left to right. Using Hover, Width and Transition (section gallery => item-title when hover over)</li>
 <li>Usage of Toggle Class and Transition Delay (order of the movements of the navigation and menu-btn when clicking menu button</li>
 <li>Accessibility tricks by adding aria values with JS (menu-btn and navigation)</li>
@@ -20,7 +20,6 @@
 </ul>
 
 ## How did I do this?
-
 ### Technologies
 <ul>
 <li>HTML, CSS & JavaScript.</li>
