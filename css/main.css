@@ -492,6 +492,7 @@ html {
       width: 0;
       overflow: hidden; }
   .register-input {
+    position: relative;
     outline: none;
     border: none;
     font-size: .6rem;
@@ -520,6 +521,24 @@ html {
     background-color: #333;
     outline: none;
     border: none; }
+  .register-warning {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(170%);
+    width: 100%;
+    color: #a79a2d;
+    font-size: .8rem;
+    display: none; }
+  .register-success {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(170%);
+    width: 100%;
+    color: #a79a2d;
+    font-size: .8rem;
+    display: none; }
 
 .footer {
   position: relative;

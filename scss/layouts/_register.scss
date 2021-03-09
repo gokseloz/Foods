@@ -90,6 +90,7 @@
     }
 
     &-input {
+        position: relative;
         outline: none;
         border: none;
         font-size: .6rem;
@@ -110,6 +111,7 @@
         &::placeholder{
             color: $c-mustard;
         }
+
     }
 
 
@@ -125,4 +127,27 @@
         outline: none;
         border: none;
     }
+
+    
+    &-warning{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(170%);
+        width: 100%;
+        color: $c-mustard;
+        font-size: .8rem;
+        display: none;
+    }
+    &-success{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(170%);
+        width: 100%;
+        color: $c-mustard;
+        font-size: .8rem;
+        display: none;
+    }
+    
 }
