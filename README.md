@@ -35,5 +35,5 @@
 
 ## Live demo
 <ul> 
-<li><a href="https://bookmark-landing-page.gokseloz.vercel.app/" target="_blank">See live demo</a></li>
+<li><a href="https://foods-gokseloz.vercel.app/" target="_blank">See live demo</a></li>
 </ul>
