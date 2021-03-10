@@ -183,7 +183,7 @@ html {
     opacity: .5; }
   .gallery-images-item:hover .item-title {
     width: 50%;
-    transition: width .5s; }
+    transition: width .5s .5s; }
     @media (min-width: 550px) {
       .gallery-images-item:hover .item-title {
         font-size: 1rem; } }
@@ -192,7 +192,7 @@ html {
         font-size: 1.2rem; } }
   .gallery-images-item:hover .item-desc {
     opacity: 1;
-    transition: opacity 1s 1s; }
+    transition: opacity 1s .8s; }
     @media (min-width: 550px) {
       .gallery-images-item:hover .item-desc {
         font-size: .8rem; } }
