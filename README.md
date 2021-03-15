@@ -15,7 +15,7 @@
 <li>A card with a different 3D effect</li>
 <li>Texts fade-in effect from left to right. Using Hover, Width and Transition
   <ul>
-    <li>appliled: section gallery => item-title when hover over the image</li>
+    <li>appllied: section gallery => item-title when hover over the image</li>
   </ul>
   </li>
 <li>Usage of Toggle Class and Transition Delay (order of the movements of the navigation and menu-btn when clicking menu button</li>
