@@ -7,7 +7,7 @@
 
 ## Why did I work on this project?
 <ul>
-<li>I completed this challenge in order to improve my HTML, CSS and JS skills</li>
+<li>I made this website in order to improve my HTML, CSS and JS skills</li>
 </ul>
 
 ## What did I learn from this project?
