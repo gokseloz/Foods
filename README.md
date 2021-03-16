@@ -10,11 +10,11 @@
 ## What did I learn from this project?
 - A card with a different 3D effect
   - applied: popular section
-- Texts fade-in effect by using hover, width and transition
+- Texts fade-in effect by using width and transition
   - applied: section gallery => item-title after hover over the image
-- Usage of Toggle Class and Transition Delay 
+- Adjusting movement order by using toggle Class and transition delay 
   - applied: nav menu and menu-btn, the movement order of them change while menu expands and collapses
-- Accessibility ideas by adding aria values with JS 
+- Some accessibility ideas
   - applied: menu-btn and navigation
 - Design approaches
 
