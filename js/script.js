@@ -35,19 +35,10 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("is-active")
     nav.classList.toggle("is-active")
 
-    if (menuBtn.classList.contains("is-active")) {
-        menuBtn.setAttribute("aria-expanded", "true")
-        menuBtn.setAttribute("aria-pressed", "true")
-        navLink.forEach(e => {
-            e.setAttribute("tabindex", "0")
-        });
-    } else {
-        menuBtn.setAttribute("aria-expanded", "false")
-        menuBtn.setAttribute("aria-pressed", "false")
-        navLink.forEach(e => {
-            e.setAttribute("tabindex", "-1")
-        });
-    }
+    menuBtn.classList.contains("is-active") ? menuBtn.setAttribute("aria-expanded", "true") : menuBtn.setAttribute("aria-expanded", "false")
+    menuBtn.classList.contains("is-active") ? menuBtn.setAttribute("aria-pressed", "true") : menuBtn.setAttribute("aria-pressed", "false")
+    menuBtn.classList.contains("is-active") ? navLink.forEach(e => e.setAttribute("tabindex", "0")) : navLink.forEach(e => e.setAttribute("tabindex", "-1"))
+
 })
 
 // --------------------------------------
@@ -78,6 +69,7 @@ function logSubmit(e) {
 
 function warning() {
     registerWarningText.style.display = "block"
+    alert("please type valid email")
 
     setTimeout(() => {
         registerWarningText.style.display = "none"
