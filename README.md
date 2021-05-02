@@ -1,8 +1,5 @@
 ## Foods-Introduction
 - A website made by following an online course
-- Vast majority of the codes I implemented by myself
-- When I got stuck and could not find out any way to solve the problem, I took a look at the completed project's code or search online
-
 
 ## Why did I work on this project?
 - I made this website in order to improve my HTML, CSS and JS skills
@@ -15,7 +12,8 @@
 - Adjusting movement order by using toggle Class and transition delay 
   - applied: nav menu and menu-btn, the movement order of them change while menu expands and collapses
 - Some accessibility ideas
-  - applied: menu-btn and navigation
+  - applied: menu-btn, navigation and register form
+    - role:status, role:alert, aria-invalid, aria-expanded, aria-pressed
 - Design approaches
 
 ## How did I do this?
@@ -26,7 +24,6 @@
 
 ### Responsivity
 - Fully Responsive
-
 
 ## Live demo
 - [See live demo](https://foods-gokseloz.vercel.app)
