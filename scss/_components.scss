@@ -28,6 +28,10 @@
         height: 3.6rem;
     }
 
+    &:hover, &:focus{
+        background-color: #a79a2d;
+    }
+
     &.is-active {
         top: 6rem;
         transition: top .5s;
@@ -217,7 +221,7 @@
         height: 16rem;
     }
 
-    &:hover {
+    &:hover, &:focus {
         .item-img {
             transform: scale(1.1);
             box-shadow: .4rem .4rem 0.05rem #e92929, .8rem .8rem 0.05rem #a2e946, 1.2rem 1.2rem 0.05rem #297ce9, 1.6rem 1.6rem 0.05rem #e92999;

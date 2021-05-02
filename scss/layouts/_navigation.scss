@@ -84,7 +84,7 @@
             font-size: 1.12rem;
         }
 
-        &:hover {
+        &:hover, &:focus {
             i {
                 color: $c-white;
             }
