@@ -60,6 +60,7 @@ function logSubmit(e) {
     } else {
         registerSuccessText.style.display = "block"
         registerInput.value = ""
+        registerInput.setAttribute("aria-invalid", "false")
         registerSuccessText.setAttribute("role", "status")
 
         setTimeout(() => {
@@ -71,6 +72,8 @@ function logSubmit(e) {
 function warning() {
     registerWarningText.style.display = "block"
     registerWarningText.setAttribute("role", "alert")
+    registerInput.setAttribute("aria-invalid", "true")
+
     
     setTimeout(() => {
         registerWarningText.style.display = "none"
