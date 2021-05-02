@@ -54,12 +54,13 @@ registerForm.addEventListener("submit", logSubmit)
 function logSubmit(e) {
     e.preventDefault()
 
-    if (registerInput.value.length == 0) {
+    if (registerInput.value.length == 0){
         warning()
 
     } else {
         registerSuccessText.style.display = "block"
         registerInput.value = ""
+        registerSuccessText.setAttribute("role", "status")
 
         setTimeout(() => {
             registerSuccessText.style.display = "none"
@@ -69,8 +70,8 @@ function logSubmit(e) {
 
 function warning() {
     registerWarningText.style.display = "block"
-    alert("please type valid email")
-
+    registerWarningText.setAttribute("role", "alert")
+    
     setTimeout(() => {
         registerWarningText.style.display = "none"
     }, 3000);
