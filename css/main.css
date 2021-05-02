@@ -522,7 +522,12 @@ html {
     color: #a79a2d;
     background-color: #333;
     outline: none;
-    border: none; }
+    border: none;
+    cursor: pointer;
+    transition: all .3s; }
+    .register-btn:hover, .register-btn:focus {
+      color: #333;
+      background-color: #a79a2d; }
   .register-warning {
     position: absolute;
     left: 0;
